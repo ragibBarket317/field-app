@@ -1,0 +1,20 @@
+{
+  "name": "field-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "mongoose": "^8.7.0",
+    "jszip": "3.10.1",
+    "jspdf": "^2.5.2",
+    "html2canvas-pro": "^1.5.8"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.14",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20"
+  }
+}

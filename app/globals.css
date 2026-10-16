@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-[#f4f7f5] text-[#162a28] antialiased; font-family: system-ui, -apple-system, 'Noto Sans Bengali', 'Kohinoor Bangla', 'Siyam Rupali', Arial, sans-serif; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+
+@layer components {
+  .card { @apply bg-white border border-[#dce6e2] rounded-2xl p-4 shadow-card; }
+  .lbl { @apply block text-xs font-bold text-[#435751] mb-1.5; }
+  .inp { @apply w-full min-h-[48px] rounded-xl border border-[#cad8d2] bg-white px-3 py-2.5 text-base text-[#162a28] placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/40 focus:border-brand; }
+  .inp[readonly] { @apply bg-[#f1f5f3] text-[#557069]; }
+  .btn { @apply inline-flex items-center justify-center gap-2 min-h-[48px] rounded-xl px-4 font-bold text-[15px] active:scale-[.98] transition disabled:opacity-50; }
+  .btn-primary { @apply btn bg-brand text-white; }
+  .btn-soft { @apply btn bg-brand-soft text-brand; }
+  .btn-ghost { @apply btn bg-white border border-[#cad8d2] text-[#334541]; }
+  .btn-danger { @apply btn bg-[#fff1ef] text-[#b43a32]; }
+  .chip { @apply inline-block rounded-full px-2 py-0.5 text-[10px] font-extrabold; }
+  .metric { @apply rounded-2xl border border-[#dce6e2] bg-white p-3; }
+}
